@@ -1,0 +1,24 @@
+.gallery {
+  width: 600px;
+  margin: 100px auto;
+}
+
+.gallery__LargeImg {
+  width: 600px;
+  object-fit: cover;
+  padding: 5px;
+  border: 1px solid #ccc;;
+}
+
+.gallery__images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery__imgItem {
+  width: 111px;
+  padding: 3px;
+  border: 1px solid #ccc;
+  margin: 2px;
+  cursor: pointer;
+}

@@ -12,12 +12,13 @@ class Gallery {
         </div>
       </section>
     `;
+
+    this.addEvents();
   }
 
   clickEvent(event) {
     const imgList = document.querySelector('.gallery__images');
     const item = event.target.closest('.gallery__imgItem');
-
     if(item || imgList.contains(item)) {
       const largeImg = document.querySelector('.gallery__LargeImg');
       largeImg.setAttribute('src', item.getAttribute('src'));
@@ -32,6 +33,6 @@ class Gallery {
 
 }
 
-let gal = new Gallery();
-gal.createHtmlGallery();
-gal.addEvents();
+let galery = new Gallery();
+galery.createHtmlGallery();
+
